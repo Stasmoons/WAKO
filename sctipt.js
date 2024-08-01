@@ -53,13 +53,13 @@ buttonGetSignal.onclick = function() {
   })
 
   // Считаем, сколько должно быть звёзд в зависимости от ловушек
-  if (minesCount === 7) { starsCount = 1; }
-  else if (minesCount === 5) { starsCount = 3; }
+  if (minesCount === 7) { starsCount = 3; }
+  else if (minesCount === 5) { starsCount = 4; }
   else if (minesCount === 3) { starsCount = 5; }
   else { starsCount = 6; }
   
   const cells = document.querySelectorAll('.cell');
-  const duration = 1200; // Время между заменой клетки на звёздочку
+  const duration = 1000; // Время между заменой клетки на звёздочку
 
   let selectedCells = Array.from(cells);
   for (let i = selectedCells.length - 1; i > 0; i--) {
