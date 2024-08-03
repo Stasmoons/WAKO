@@ -59,9 +59,9 @@
             <h3>количество ловушек</h3>
 
             <div class="mines-count-buttons flex"> 
-              <button id="minus">-</button>
+              <button id="minusTrapButton">-</button>
               <p id="minesCountDisplay">2</p>
-              <button id="plus">+</button>
+              <button id="plusTrapButton">+</button>
             </div>
           </div>
         </div>
@@ -70,7 +70,10 @@
           <button id="get-signal" class="game-button get-signal-button">GET SIGNAL</button>
         </div>
     </div>
-  <div class="background"></div>
+
+    <video autoplay loop muted class="bgvideo" id="bgvideo">
+      <source src="assets/videos/bg.MP4" type="video/mp4"></source>
+     </video>
     
   <audio id="starSoundEffect" src="assets/audio/star_sound.mp3" preload="auto" volume="1"></audio>
   <audio id="clickSoundEffect" src="assets/audio/click.mp3" preload="auto" volume="0.2"></audio>

@@ -23,8 +23,8 @@ let minesCount = 5;
 const minMinesCount = 1;
 const maxMinesCount = 7;
 
-plusButton = document.getElementById("plus");
-minusButton = document.getElementById("minus");
+plusButton = document.getElementById("plusTrapButton");
+minusButton = document.getElementById("minusTrapButton");
 minesCountDisplay = document.getElementById("minesCountDisplay");
 
 minesCountDisplay.innerText = minesCount;
@@ -70,15 +70,16 @@ buttonGetSignal.onclick = function() {
 
   function transformNextCell(index) {
     if (index < selectedCells.length) {
-      const cell = selectedCells[index];
+      starSoundEffect.play();
       
+      const cell = selectedCells[index];
       cell.classList.add('hidden');
+
       cell.addEventListener('transitionend', function onTransitionEnd() {
         cell.classList.remove('cell', 'hidden');
         cell.classList.add('star');
 
         void cell.offsetWidth;
-        starSoundEffect.play();
 
         cell.classList.add('visible');
         cell.removeEventListener('transitionend', onTransitionEnd);
@@ -87,11 +88,11 @@ buttonGetSignal.onclick = function() {
       setTimeout(() => transformNextCell(index + 1), duration);
     }
   }
-
+  
   transformNextCell(0);
 
-  starSoundEffect.pause();
-  starSoundEffect.currentTime = 0;
+  // starSoundEffect.pause();
+  // starSoundEffect.currentTime = 0;
 
   setTimeout(() => {
     buttonGetSignal.disabled = false;
