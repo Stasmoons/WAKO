@@ -1,0 +1,186 @@
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100vh;
+  
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "slnt" 0;
+  
+    background-color: #000000;
+  }
+  
+  
+.container {
+    width: 500px;
+    height: 100%;
+    background-size: cover;
+    /* background-image: url('../assets/images/background.png'); */
+    padding-top: 1vh;
+  
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+  
+.lucky-jet-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  
+    margin-bottom: 25px;
+}
+  
+.lucky-jet-logo {
+    min-width: 120px;
+    max-width: 160px;
+    width: 38vmin;
+    margin-bottom: 10px;
+}
+  
+  .bot-logo {
+    min-width: 120px;
+    max-width: 360px;
+    width: 90%;
+  }
+  
+  .bot-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+  }
+  
+  .bot-name p {
+    display: inline;
+    color: #59d2f4;
+    font-family: "Libre Franklin", sans-serif;
+    font-weight: 1000;
+    font-size: 5.2vmin;
+    letter-spacing: 1px;
+    /* text-shadow: 0 2px 30px #5fcbee; */
+  }
+  
+  .tg-icon {
+    width: 9%;
+  }
+  
+  
+  
+.signals-display-container {
+    width: 85%;
+    margin-bottom: 25px;
+}
+  
+.signals-field {
+    width: 100%;
+    aspect-ratio: 1;
+    padding: 3%;
+    border-radius: 5%;
+    background-color: #1e2c35;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    margin-bottom: 20px;
+    z-index: 0;
+    /* row-gap: 10px; */
+}
+
+.signals-row {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 0;
+
+    /* transform: rotateX(40deg); */
+}
+
+.signal-cell {
+    border-radius: 20%;
+    background-color: #0b0b0d;
+    border: solid 5px #536575; 
+    width: 15%;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+
+    transition: transform 1s ease;
+    z-index: 0;
+
+    /* .. box-shadow: 0 15px black; */
+}
+
+.footprint {
+    background-image: url("../assets/images/bombucks-signal-.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 105%;
+    transform: scale(1.1);
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.5s ease-out;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+        z-index: 1;
+    }
+    70% {
+        transform: translateY(0px);
+    }
+    100% {
+        opacity: 1;
+        z-index: 1;
+    }
+}
+  
+  
+  
+.game-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 100%;
+}
+  
+.game-button {
+    background-color: #576a7c;
+    /* background: linear-gradient(#aeb702 0% 85%, #262c7d 96% 100%); */
+    box-shadow: 0px 5px 0 -2px #1e2c35;
+    border-radius: 15%;
+    border: none;
+    padding: 3px;
+    width: 15%;
+    aspect-ratio: 1;
+  
+    transition: transform 0.1s ease, opacity 0.5s ease, box-shadow 0.2s ease;
+}
+
+.game-button:active {
+    box-shadow: 0px 5px 0 -3px #2c3f4a;
+    background-color: #485866;
+    transform: translateY(5px);
+}
+
+.game-button img {
+    width: 100%;
+}
+
+.hidden {
+    opacity: 0.3;
+}
+  
