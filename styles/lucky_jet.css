@@ -14,55 +14,38 @@ body {
     background-color: #000000;
   }
   
-.bgvideo {
-    object-fit: cover;
-    z-index: -9999;
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    max-width: 100vw;
-    max-height: 100vh;
-    width: auto;
-    height: auto;
+.container {
+  width: 500px;
+  height: 100%;
+  background-size: cover;
+  padding-top: 1vh;
+  
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
   
-  
-  .container {
-    width: 500px;
-    height: 100%;
-    background-size: cover;
-    /* background-image: url('../assets/images/background.png'); */
-    padding-top: 1vh;
-  
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  .lucky-jet-top {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  
-    /* margin-bottom: 15px; */
-  }
+.lucky-jet-top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
   
   .lucky-jet-logo {
     min-width: 120px;
     max-width: 160px;
     width: 38vmin;
     margin-left: -15px;
-    margin-bottom: -35px;
+    margin-bottom: -40px;
   }
   
   .bot-logo {
     min-width: 120px;
     max-width: 360px;
     width: 90%;
-    /* margin-bottom: -5px; */
+    margin-bottom: -5px;
   }
   
   .bot-name {
@@ -94,6 +77,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 10px;
 }
   
 .lucky-jet-display {
@@ -134,7 +118,7 @@ body {
 .lucky-jet-signal {
     z-index: 10;
     color: white;
-    font-size: 9vh;
+    font-size: 8vh;
     font-family: "Libre Franklin", sans-serif;
     letter-spacing: 1px;
 } 
