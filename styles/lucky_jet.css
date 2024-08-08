@@ -1,18 +1,18 @@
 
 body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    height: 100vh;
+  height: 100vh;
   
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings: "slnt" 0;
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
   
-    background-color: #000000;
-  }
+  background-color: #000000;
+}
   
 .container {
   width: 500px;
@@ -33,125 +33,122 @@ body {
   margin-bottom: 10px;
 }
   
-  .lucky-jet-logo {
-    min-width: 120px;
-    max-width: 160px;
-    width: 38vmin;
-    margin-left: -15px;
-    margin-bottom: -40px;
-  }
+.lucky-jet-logo {
+  min-width: 120px;
+  max-width: 160px;
+  width: 38vmin;
+  margin-left: -15px;
+  margin-bottom: -40px;
+}
   
-  .bot-logo {
-    min-width: 120px;
-    max-width: 360px;
-    width: 90%;
-    margin-bottom: -5px;
-  }
+.bot-logo {
+  min-width: 120px;
+  max-width: 360px;
+  width: 90%;
+  margin-bottom: -5px;
+}
   
-  .bot-name {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    margin-bottom: 5px;
-  }
+.bot-name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-bottom: 5px;
+}
   
-  .bot-name p {
-    display: inline;
-    color: #59d2f4;
-    font-family: "Libre Franklin", sans-serif;
-    font-weight: 1000;
-    font-size: 5.2vmin;
-    letter-spacing: 1px;
-    /* text-shadow: 0 2px 30px #5fcbee; */
-  }
+.bot-name p {
+  display: inline;
+  color: #59d2f4;
+  font-family: "Libre Franklin", sans-serif;
+  font-weight: 1000;
+  font-size: 5.2vmin;
+  letter-spacing: 1px;
+}
   
-  .tg-icon {
-    width: 9%;
-  }
+.tg-icon {
+  width: 9%;
+}
   
   
   
 .signals-display-container {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
 }
   
 .lucky-jet-display {
-    position: relative;
-    width: 80%;
-    aspect-ratio: 1;
-    /* border-radius: 50%; */
-    overflow: hidden;
+  position: relative;
+  width: 80%;
+  aspect-ratio: 1;
+  overflow: hidden;
 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url("../assets/images/lucky-jet-display-bg.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("../assets/images/lucky-jet-display-bg.png");
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .lucky-jet-display-bg {
-    width: 87%;
-    position: absolute;
-    display: inline;
-    transition: opacity 0.7s ease;
+  width: 87%;
+  position: absolute;
+  display: inline;
+  transition: opacity 0.7s ease;
 }
 
 @keyframes spin {
-    from {
-        transform: rotate(0deg);
-    }
-    to {
-        transform: rotate(360deg);
-    }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .lucky-jet-signal {
-    z-index: 10;
-    color: white;
-    font-size: 8vh;
-    font-family: "Libre Franklin", sans-serif;
-    letter-spacing: 1px;
+  z-index: 10;
+  color: white;
+  font-size: 8vh;
+  font-family: "Libre Franklin", sans-serif;
+  letter-spacing: 1px;
 } 
   
   
 .game-buttons {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
 }
   
 .game-button {
-    background-color: #1e2261;
-    background: linear-gradient(#1e2261 0% 85%, #262c7d 96% 100%);
-    border: none;
-    width: 70%;
-    height: 6vh;
-    font-family: "Zantiqa", sans-serif;
+  background-color: #1e2261;
+  background: linear-gradient(#1e2261 0% 85%, #262c7d 96% 100%);
+  border: none;
+  width: 70%;
+  height: 6vh;
+  font-family: "Zantiqa", sans-serif;
+
+  font-size: 3vh;
+  text-transform: uppercase;
   
-    font-size: 3vh;
-    /* font-weight: 500; */
-    text-transform: uppercase;
-  
-    color: white;
-    text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.174);
-    transition: transform 0.3s ease, opacity 0.5s ease;
+  color: white;
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.174);
+  transition: transform 0.3s ease, opacity 0.5s ease;
 }
   
 
 .hidden {
-    opacity: 0.3;
+  opacity: 0.3;
 }
   

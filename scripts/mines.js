@@ -99,9 +99,6 @@ buttonGetSignal.onclick = function() {
   
   transformNextCell(0);
 
-  starSoundEffect.pause();
-  starSoundEffect.currentTime = 0;
-
   setTimeout(() => {
     buttonGetSignal.disabled = false;
   }, duration * starsCount + 800); // Ожидание полного завершения всех анимаций
