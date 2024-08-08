@@ -41,6 +41,10 @@ body {
   height: auto;
 }
 
+.bgvideo::-webkit-media-controls {
+  display: none;
+}
+
 
 a {
   color: #ffffff;
