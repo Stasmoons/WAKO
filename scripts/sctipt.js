@@ -26,3 +26,5 @@ updateLinksWithLanguageHash();
 // Полное открытие окна WebApp
 let tg = window.Telegram.WebApp;
 tg.expand();
+
+alert(tg.initDataUnsafe.user.language_code);
