@@ -1,31 +1,14 @@
-
-body {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    height: 100vh;
-  
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings: "slnt" 0;
-  
-    background-color: #000000;
-  }
-  
-  
 .container {
-    width: 500px;
+    width: 100%;
     height: 100%;
-    padding-top: 1vh;
-  
+    
     display: flex;
     align-items: center;
     flex-direction: column;
+    position: relative;
 }
   
-.lucky-jet-top {
+.top-content {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -34,11 +17,10 @@ body {
     margin-bottom: 25px;
 }
   
-.lucky-jet-logo {
+.game-logo {
     min-width: 120px;
     max-width: 200px;
     width: 50vmin;
-    /* margin-bottom: 10px; */
 }
   
   .bot-logo {
@@ -62,7 +44,6 @@ body {
     font-weight: 1000;
     font-size: 5.2vmin;
     letter-spacing: 1px;
-    /* text-shadow: 0 2px 30px #5fcbee; */
   }
   
   .tg-icon {
@@ -73,7 +54,10 @@ body {
   
 .signals-display-container {
     width: 85%;
-    margin-bottom: 25px;
+    max-width: 500px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
 }
   
 .signals-field {
@@ -88,7 +72,6 @@ body {
     flex-direction: column-reverse;
     margin-bottom: 20px;
     z-index: 0;
-    /* row-gap: 10px; */
 }
 
 .signals-row {
@@ -97,8 +80,6 @@ body {
     align-items: center;
     justify-content: space-between;
     z-index: 0;
-
-    /* transform: rotateX(40deg); */
 }
 
 .signal-cell {
@@ -114,8 +95,6 @@ body {
 
     transition: transform 1s ease;
     z-index: 0;
-
-    /* .. box-shadow: 0 15px black; */
 }
 
 .footprint {
@@ -153,16 +132,17 @@ body {
     justify-content: space-around;
     flex-direction: row;
     width: 100%;
+    margin-bottom: 2%;
 }
   
 .game-button {
     background-color: #576a7c;
-    /* background: linear-gradient(#aeb702 0% 85%, #262c7d 96% 100%); */
     box-shadow: 0px 5px 0 -2px #1e2c35;
     border-radius: 15%;
     border: none;
     padding: 3px;
     width: 15%;
+    max-width: 100px;
     aspect-ratio: 1;
   
     transition: transform 0.1s ease, opacity 0.5s ease, box-shadow 0.2s ease;

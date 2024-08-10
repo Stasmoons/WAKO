@@ -1,31 +1,16 @@
-
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  height: 100vh;
-  
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-  font-variation-settings: "slnt" 0;
-  
-  background-color: #000000;
-}
-  
 .container {
-  width: 500px;
+  width: 100%;
   height: 100%;
-  background-size: cover;
+
   padding-top: 1vh;
   
   display: flex;
   align-items: center;
   flex-direction: column;
+  position: relative;
 }
   
-.lucky-jet-top {
+.top-content {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,7 +18,7 @@ body {
   margin-bottom: 10px;
 }
   
-.lucky-jet-logo {
+.game-logo {
   min-width: 120px;
   max-width: 160px;
   width: 38vmin;
@@ -61,8 +46,9 @@ body {
   color: #59d2f4;
   font-family: "Libre Franklin", sans-serif;
   font-weight: 1000;
-  font-size: 5.2vmin;
+  font-size: 3vmax;
   letter-spacing: 1px;
+  text-align: center;
 }
   
 .tg-icon {
@@ -83,6 +69,7 @@ body {
   position: relative;
   width: 80%;
   aspect-ratio: 1;
+  max-width: 500px;
   overflow: hidden;
 
   background-position: center;
@@ -117,9 +104,10 @@ body {
 .lucky-jet-signal {
   z-index: 10;
   color: white;
-  font-size: 8vh;
+  font-size: 7vmax;
   font-family: "Libre Franklin", sans-serif;
-  text-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+  text-align: center;
+  text-shadow: 0 0 15px rgba(255, 255, 255, 0.4);
   letter-spacing: 1px;
 } 
   
@@ -131,17 +119,19 @@ body {
   flex-direction: column;
   gap: 20px;
   width: 100%;
+  margin-bottom: 2%;
 }
   
 .game-button {
   background-color: #1e2261;
   background: linear-gradient(#1e2261 0% 85%, #262c7d 96% 100%);
   border: none;
-  width: 70%;
-  height: 6vh;
+  padding: 3% 5%;
+  /* width: 60%; */
+  /* height: 6vmax; */
   font-family: "Zantiqa", sans-serif;
 
-  font-size: 3vh;
+  font-size: 3vmax;
   text-transform: uppercase;
   
   color: white;
