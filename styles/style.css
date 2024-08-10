@@ -51,9 +51,15 @@ a {
   text-decoration: none;
 }
 
+img {
+  pointer-events: none;
+}
+
 .back-button {
-  width: 6vh;
+  width: 5.5vmax;
   aspect-ratio: 1;
+  max-width: 50px;
+
   position: absolute;
   top: 5px;
   left: 5px;

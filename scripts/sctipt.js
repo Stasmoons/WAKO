@@ -27,4 +27,4 @@
 let tg = window.Telegram.WebApp;
 tg.expand();
 
-const language = tg.initDataUnsafe.user.language_code;
+const language = tg.initDataUnsafe.user ? tg.initDataUnsafe.user.language_code : "ru";

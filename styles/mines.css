@@ -180,7 +180,7 @@ body {
   
 .mines-count p {
   color: rgba(255, 255, 255, 0.8);
-  font-size: 3vh;
+  font-size: 3vmax;
 }
   
 #minusTrapButton {
@@ -208,10 +208,12 @@ body {
   background: linear-gradient(#1e2261 0% 85%, #262c7d 96% 100%);
   border: none;
   width: 70%;
-  height: 6vh;
+  height: 6vmax;
+  max-height: 60px;
+  margin-bottom: 20px;
+
   font-family: "Libre Franklin", sans-serif;
-  
-  font-size: 3vh;
+  font-size: 120%;
   font-weight: 1000;
   text-transform: uppercase;
   

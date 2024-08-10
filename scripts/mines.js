@@ -2,11 +2,7 @@ const clamp = (num, min, max) => Math.min(Math.max(num, min), max)
 
 let buttonGetSignal = document.getElementById("get-signal");
 
-let loadingSignal = document.getElementById("loading");
-let screenStart = document.getElementById("screenStart");
-let signal = document.getElementById("img-signal");
-
-
+// Перевод
 const minesCountTitle = document.getElementById("minesCountTitle");
 
 if (language === "ru") {
@@ -20,12 +16,16 @@ else {
 
 
 // Источники звука
-const starSoundEffect = document.getElementById('starSoundEffect');
-starSoundEffect.volume = 0.5;
+function playStarSound() {
+  var audio = new Audio('../assets/audio/star_sound.mp3');
+  audio.volume = 0.5;
+  audio.play();
+}
 
 const clickSoundEffect = document.getElementById('clickSoundEffect');
 clickSoundEffect.volume = 0.2;
 
+// Количество ловушек
 let starsCount;
 let minesCount = 5;
 const minMinesCount = 1;
@@ -37,28 +37,29 @@ minesCountDisplay = document.getElementById("minesCountDisplay");
 
 minesCountDisplay.innerText = minesCount;
 
-minusButton.onclick = function() {
+function changeMinesCount(count) {
   clickSoundEffect.play();
-  minesCount = clamp(minesCount-2, minMinesCount, maxMinesCount);
+  minesCount = clamp(minesCount+count, minMinesCount, maxMinesCount);
   minesCountDisplay.innerText = minesCount;
 }
 
-plusButton.onclick = function() {
-  clickSoundEffect.play();
-  minesCount = clamp(minesCount+2, minMinesCount, maxMinesCount);
-  minesCountDisplay.innerText = minesCount;
-}
+minusButton.onclick = function() { changeMinesCount(-2); }
+plusButton.onclick = function() { changeMinesCount(+2); }
 
 
-buttonGetSignal.onclick = function() {
-  buttonGetSignal.disabled = true;
-
+function clearField() {
   // Заменяем звёзды на клетки
   const stars = document.querySelectorAll('.star');
   stars.forEach((star) => {
     star.classList.remove('star', 'visible', 'hidden');
     star.classList.add('cell');
   })
+}
+
+buttonGetSignal.onclick = function() {
+  buttonGetSignal.disabled = true;
+
+  clearField();
 
   // Считаем, сколько должно быть звёзд в зависимости от ловушек
   if (minesCount === 7) { starsCount = 3; }
@@ -67,7 +68,7 @@ buttonGetSignal.onclick = function() {
   else { starsCount = 6; }
   
   const cells = document.querySelectorAll('.cell');
-  const duration = 1000; // Время между заменой клетки на звёздочку
+  const duration = 900; // Время между заменой клетки на звёздочку
 
   let selectedCells = Array.from(cells);
   for (let i = selectedCells.length - 1; i > 0; i--) {
@@ -77,8 +78,8 @@ buttonGetSignal.onclick = function() {
   selectedCells = selectedCells.slice(0, starsCount);
 
   function transformNextCell(index) {
-    if (index < selectedCells.length) {
-      starSoundEffect.play();
+    if (index < selectedCells.length) { 
+      playStarSound();
       
       const cell = selectedCells[index];
       cell.classList.add('hidden');
