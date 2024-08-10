@@ -13,22 +13,7 @@ body {
   
     background-color: #000000;
   }
-  
-.bgvideo {
-    object-fit: cover;
-    z-index: -9999;
-    position: absolute;
-    top: 0;
-    left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    max-width: 100vw;
-    max-height: 100vh;
-    width: auto;
-    height: auto;
-}
-  
-  
+    
 .container {
     width: 500px;
     height: 100%;

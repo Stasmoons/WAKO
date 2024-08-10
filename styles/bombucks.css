@@ -18,8 +18,6 @@ body {
 .container {
     width: 500px;
     height: 100%;
-    background-size: cover;
-    /* background-image: url('../assets/images/background.png'); */
     padding-top: 1vh;
   
     display: flex;
