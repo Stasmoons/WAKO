@@ -17,7 +17,7 @@ else {
 
 // Источники звука
 function playStarSound() {
-  var audio = new Audio('../assets/audio/star_sound.mp3');
+  var audio = new Audio('assets/audio/star_sound.mp3');
   audio.volume = 0.5;
   audio.play();
 }
