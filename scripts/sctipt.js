@@ -1,30 +1,28 @@
-// // Функция для получения языка из URL хеша
-// function getLanguageFromHash() {
-//     const hash = window.location.hash;
-//     if (hash) {
-//         return hash.substring(1); // Удаляем символ '#'
-//     }
-//     return "ru";
-// }
+// Функция для получения языка из URL хеша
+function getLanguageFromUrl() {
+    if (window.location.search) {
+        const urlParams = new URLSearchParams(window.location.search);
+        return urlParams.get('lang');
+    }
+    return "ru";
+}
 
-// // Получаем язык из URL
-// const language = getLanguageFromHash();
+// Получаем язык из URL
+const language = getLanguageFromUrl();
 
-// // Функция для обновления всех ссылок на странице с текущим хешем
-// function updateLinksWithLanguageHash() {
-//     const links = document.querySelectorAll('a[href]');
+// Функция для обновления всех ссылок на странице текущим языком
+function updateLinksLanguage() {
+    const links = document.querySelectorAll('a[href]');
     
-//     links.forEach(link => {
-//         link.href = `${link.href}#${language}`;
-//     });
-// }
+    links.forEach(link => {
+        link.href = `${link.href}?lang=${language}`;
+    });
+}
 
-// // Обновляем ссылки при загрузке страницы
-// updateLinksWithLanguageHash();
+// Обновляем ссылки при загрузке страницы
+updateLinksLanguage();
 
 
 // Полное открытие окна WebApp
 let tg = window.Telegram.WebApp;
 tg.expand();
-
-const language = tg.initDataUnsafe.user ? tg.initDataUnsafe.user.language_code : "ru";

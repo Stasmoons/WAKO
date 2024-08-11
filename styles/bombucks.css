@@ -139,7 +139,7 @@ body {
     justify-content: space-around;
     flex-direction: row;
     width: 100%;
-    margin-bottom: 2%;
+    margin-bottom: 30px;
 }
   
 .game-button {
