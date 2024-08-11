@@ -8,11 +8,11 @@
     align-items: center;
     flex-direction: column;
     position: relative;
-/* 
+
     background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  background-image: url("../assets/images/bombucks.jpg"); */
+    background-position: center;
+    background-size: cover;
+    background-image: url("../assets/images/royal-mines-bg.PNG");
 }
   
 .lucky-jet-top {
@@ -139,12 +139,11 @@
     justify-content: space-around;
     flex-direction: row;
     width: 100%;
-    /* gap: 20%; */
+    margin-bottom: 30px;
 }
   
 .game-button {
     background-color: #aeb702;
-    /* background: linear-gradient(#aeb702 0% 85%, #262c7d 96% 100%); */
     box-shadow: 0px 5px 0 -2px #83882b99;
     border-radius: 15%;
     border: none;

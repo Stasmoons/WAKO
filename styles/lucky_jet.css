@@ -8,6 +8,11 @@
   align-items: center;
   flex-direction: column;
   position: relative;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("../assets/images/lucky-jet-bg.png");
 }
   
 .top-content {

@@ -1,26 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/mines.css">
-  <link rel="stylesheet" href="styles/style.css">
-  <title>WAKO SIGNALS BOT</title>
-</head>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/mines.css">
+    <title>WAKO SIGNALS BOT</title>
+  </head>
 
-<body>
+  <body>
     <div class="container">
       <div class="mines-top">
         <a class="back-button" href="./index.html"></a>
 
         <img src="assets/icons/mines.png" class="mines-logo"/>
-        <!-- <h1 class="bot-title">MINES | WAKO</h1> -->
         <img src="assets/icons/mines_bot_logo.png" class="bot-logo"/>
-      
+        
         <div class="bot-name">
           <img src="assets/icons/tg.png" class="tg-icon"/>
           <p>WAKO SIGNALS BOT</p>
@@ -29,31 +25,11 @@
 
       <div class="signals-display-container">
         <div class="signals-display">
-          <div class="cell"></div>
-          <div class="cell"></div>
-          <div class="cell"></div>
-          <div class="cell"></div>
-          <div class="cell"></div>
-          <div class="cell"></div>
-          <div class="cell"></div>
-          <div class="cell"></div>
-          <div class="cell"></div>
-          <div class="cell"></div>
-          <div class="cell"></div>
-          <div class="cell"></div>
-          <div class="cell"></div>
-          <div class="cell"></div>
-          <div class="cell"></div>
-          <div class="cell"></div>
-          <div class="cell"></div>
-          <div class="cell"></div>
-          <div class="cell"></div>
-          <div class="cell"></div>
-          <div class="cell"></div>
-          <div class="cell"></div>
-          <div class="cell"></div>
-          <div class="cell"></div>
-          <div class="cell"></div>
+          <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+          <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+          <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+          <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
+          <div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div><div class="cell"></div>
         </div>
       </div>
 
@@ -68,21 +44,18 @@
           </div>
         </div>
       </div>
-  
+    
       <div class="game-buttons">
         <button id="get-signal" class="game-button get-signal-button">GET SIGNAL</button>
       </div>
 
-      <video autoplay loop muted playsinline width="100%" height="100%" src="assets/videos/snow_bg.MP4" type="video/mp4" class="bgvideo" id="bgvideo"></video>
-  </div>
+      <!-- <video autoplay loop muted playsinline width="100%" height="100%" src="assets/videos/snow_bg.MP4" type="video/mp4" class="bgvideo" id="bgvideo"></video> -->
+    </div>
 
-    
-  <audio id="starSoundEffect" src="assets/audio/star_sound.mp3" preload="auto" volume="1"></audio>
-  <audio id="clickSoundEffect" src="assets/audio/click.mp3" preload="auto" volume="0.2"></audio>
+    <audio id="clickSoundEffect" src="assets/audio/click.mp3" preload="auto" volume="0.2"></audio>
 
-  <script src="https://telegram.org/js/telegram-web-app.js"></script>
-  <script src="scripts/sctipt.js"></script>
-  <script src="scripts/mines.js"></script>
-</body>
-
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="scripts/sctipt.js"></script>
+    <script src="scripts/mines.js"></script>
+  </body>
 </html>
