@@ -132,7 +132,8 @@ body {
   align-items: center;
   justify-items: center;
   justify-content: center;
-  font-family: "Libre Franklin", sans-serif;
+  font-family: "Large", sans-serif;
+  letter-spacing: 1px;
   margin-bottom: 20px;
 }
   
@@ -174,6 +175,8 @@ body {
 .mines-count p {
   color: rgba(255, 255, 255, 0.8);
   font-size: 3vmax;
+  font-family: "Large", sans-serif;
+  letter-spacing: 1px;
 }
   
 #minusTrapButton {
@@ -205,8 +208,9 @@ body {
   max-height: 60px;
   margin-bottom: 20px;
 
-  font-family: "Libre Franklin", sans-serif;
-  font-size: 120%;
+  font-family: "Large", sans-serif;
+  letter-spacing: 1px;
+  font-size: 125%;
   font-weight: 1000;
   text-transform: uppercase;
   
