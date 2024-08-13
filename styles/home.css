@@ -2,6 +2,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-image: url(../assets/images/home-bg.jpg);
 }
 
 .container {
@@ -10,7 +11,7 @@ body {
   /* width: 590px; */
   /* height: 1280px; */
 
-  padding-top: 2vh;
+  padding-top: 0vh;
   
   display: flex;
   align-items: center;
@@ -20,12 +21,27 @@ body {
 }
   
 
+
+.bot-logo {
+  width: 25%;
+  margin: 0;
+  margin-top: -15px;
+}
+
+.bot-title {
+  width: 85%;
+  margin: -14%;
+  margin-bottom: -12%;
+}
+
   
 .choose-game {
-  color: #6ea3ec;
-  text-shadow: 0 0 10px #4c82ce;
-  /* margin: 20px; */
-  margin-bottom: 30px;
+  color: white;
+  text-shadow: 0 0 10px rgba(255, 255, 255, 0.421);
+  font-size: 3vmax;
+  letter-spacing: 1px;
+  font-family: "Large", sans-serif;
+  /* margin-bottom: 5px; */
   text-transform: uppercase;
   text-align: center;
   /* margin-bottom: 10px; */
@@ -38,9 +54,10 @@ body {
   justify-content: center;
   align-items: baseline;
   flex-wrap: wrap;
-  gap: 30px;
+  row-gap: 15px;
+  column-gap: 20px;
   width: 100%;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
   
 .game-link {
@@ -75,7 +92,7 @@ body {
 }
 
 .game-name {
-  font-size: 180%;
+  font-size: 148%;
   letter-spacing: 1px;
   line-height: 100%;
   text-align: center;
